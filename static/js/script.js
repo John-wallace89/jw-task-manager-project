@@ -1,14 +1,19 @@
-// Side nav JQuery
 $(document).ready(function(){
+  // Side nav JQuery
     $('.sidenav').sidenav();
-  });
-
   // Accordion JQuery
-  $(document).ready(function(){
     $('.collapsible').collapsible();
+  //Tooltip
+    $('.tooltipped').tooltip();
+  //datepicker
+    $('.datepicker').datepicker({
+      format: "dd mmmm, yyyy",
+      yearRange: 3,
+      showClearBtn: true,
+      i18n: {
+        done: "Select"
+      }
+    });
   });
 
-  //Tooltip
-  $(document).ready(function(){
-    $('.tooltipped').tooltip();
-  });
+  
